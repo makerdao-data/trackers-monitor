@@ -11,7 +11,3 @@ URL = "https://tracker-gov.makerdao.network/"
 R = get(URL)
 if R.status_code != 200:
     telegram_send.send(messages=["FATAL: tracker-gov.makerdao.network is down"]) 
-
-
-# */5 * * * * /home/ubuntu/airflow-scheduler-monitor/env/bin/python monitor.py
-# /home/ubuntu/airflow-scheduler-monitor/env/bin/python /home/ubuntu/trackers-monitor/v-tracker.py
